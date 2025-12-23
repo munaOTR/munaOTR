@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MunaOTR Trimz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100">
+        <nav class="flex items-center justify-between px-6 md:px-8 py-6 sticky top-0 bg-zinc-950/95 backdrop-blur-sm z-50 border-b border-zinc-900">
+    <div class="text-xl md:text-2xl font-bold uppercase tracking-tighter">
+        <a href="index.html">MunaOTR<span class="text-amber-500">Trimz</span></a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+        <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+        <a href="service.html" class="hover:text-amber-500 transition">Services</a>
+        <a href="portfolio.html" class="hover:text-amber-500 transition">Portfolio</a>
+        <a href="about.html" class="hover:text-amber-500 transition">About</a>
+        <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden md:block bg-amber-500 text-black px-6 py-2 font-bold uppercase text-xs hover:bg-amber-400">Book Now</a>
+        
+        <button id="open-menu" class="md:hidden text-white p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<div id="menu-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-md z-[60] hidden transition-all duration-300"></div>
+
+<div id="side-menu" class="fixed top-0 right-0 h-full w-[70%] bg-zinc-950 z-[70] translate-x-full transition-transform duration-300 ease-in-out border-l border-zinc-800 flex flex-col p-8">
+    <button id="close-menu" class="self-end text-zinc-400 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+    
+    <div class="flex flex-col space-y-8 text-2xl uppercase font-bold tracking-widest">
+        <a href="index.html" class="hover:text-amber-500">Home</a>
+        <a href="service.html" class="hover:text-amber-500">Services</a>
+        <a href="portfolio.html" class="hover:text-amber-500">Portfolio</a>
+        <a href="about.html" class="hover:text-amber-500">About</a>
+        <a href="contact.html" class="hover:text-amber-500">Contact</a>
+        <a href="contact.html" class="bg-amber-500 text-black px-6 py-4 text-center text-lg mt-4">Book Now</a>
+    </div>
+</div>
+
+    <section class="relative h-[80vh] flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&q=80" alt="Barber Shop" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-zinc-950"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-3xl">
+            <h1 class="text-6xl md:text-8xl font-bold uppercase mb-4 leading-none">Precision <br> & Style</h1>
+            <p class="text-zinc-400 text-lg md:text-xl mb-8 max-w-xl mx-auto">More than just a haircut. We provide a premium grooming experience tailored to your unique look.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="portfolio.html" class="border border-zinc-500 px-8 py-4 uppercase font-bold hover:bg-white hover:text-black transition">View Our Work</a>
+                <a href="contact.html" class="bg-amber-500 text-black px-8 py-4 uppercase font-bold hover:bg-amber-400 transition">Schedule Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="border-t border-zinc-800 pt-8">
+                <h3 class="text-amber-500 text-xl mb-4">01. Haircuts</h3>
+                <p class="text-zinc-400">From classic tapers to modern skin fades. Includes consultation and styling.</p>
+            </div>
+            <div class="border-t border-zinc-800 pt-8">
+                <h3 class="text-amber-500 text-xl mb-4">02. Beard Grooming</h3>
+                <p class="text-zinc-400">Hot towel treatment, precision shaping, and premium oil application.</p>
+            </div>
+            <div class="border-t border-zinc-800 pt-8">
+                <h3 class="text-amber-500 text-xl mb-4">03. Royal Shave</h3>
+                <p class="text-zinc-400">The ultimate traditional straight-razor shave experience.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="book" class="py-24 px-8 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold uppercase mb-8">Ready for a new look?</h2>
+        <div class="bg-zinc-900 p-8 border border-zinc-800">
+            <p class="text-zinc-400 mb-6">Open Mon-Sat: 9:00 AM — 8:00 PM</p>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                <input type="text" placeholder="Your Name" class="bg-zinc-800 border border-zinc-700 p-3 outline-none focus:border-amber-500">
+                <input type="email" placeholder="Your Email" class="bg-zinc-800 border border-zinc-700 p-3 outline-none focus:border-amber-500">
+                <select class="bg-zinc-800 border border-zinc-700 p-3 outline-none focus:border-amber-500 col-span-full">
+                    <option>Select Service</option>
+                    <option>Standard Haircut</option>
+                    <option>Beard Trim</option>
+                    <option>Full Service</option>
+                </select>
+                <button class="col-span-full bg-amber-500 text-black font-bold p-4 uppercase hover:bg-amber-400 transition">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-zinc-900 text-center text-zinc-600 text-sm">
+        <p>&copy; 2025 MunaOTR Trimz. All Rights Reserved.</p>
+    </footer>
+<script src="main.js"></script>
+</body>
+</html>

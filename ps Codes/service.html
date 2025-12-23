@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | MunaOTR Trimz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2 { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+      
+     <nav class="flex items-center justify-between px-6 md:px-8 py-6 sticky top-0 bg-zinc-950/95 backdrop-blur-sm z-50 border-b border-zinc-900">
+    <div class="text-xl md:text-2xl font-bold uppercase tracking-tighter">
+        <a href="index.html">MunaOTR<span class="text-amber-500">Trimz</span></a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+        <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+        <a href="service.html" class="hover:text-amber-500">Services</a>
+        <a href="portfolio.html" class="hover:text-amber-500 transition">Portfolio</a>
+        <a href="about.html" class="hover:text-amber-500 transition">About</a>
+        <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden md:block bg-amber-500 text-black px-6 py-2 font-bold uppercase text-xs hover:bg-amber-400">Book Now</a>
+        
+        <button id="open-menu" class="md:hidden text-white p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<div id="menu-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-md z-[60] hidden transition-all duration-300"></div>
+
+<div id="side-menu" class="fixed top-0 right-0 h-full w-[70%] bg-zinc-950 z-[70] translate-x-full transition-transform duration-300 ease-in-out border-l border-zinc-800 flex flex-col p-8">
+    <button id="close-menu" class="self-end text-zinc-400 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+    
+    <div class="flex flex-col space-y-8 text-2xl uppercase font-bold tracking-widest">
+        <a href="index.html" class="hover:text-amber-500">Home</a>
+        <a href="services.html" class="hover:text-amber-500">Services</a>
+        <a href="portfolio.html" class="hover:text-amber-500">Portfolio</a>
+        <a href="about.html" class="hover:text-amber-500">About</a>
+        <a href="contact.html" class="hover:text-amber-500">Contact</a>
+        <a href="contact.html" class="bg-amber-500 text-black px-6 py-4 text-center text-lg mt-4">Book Now</a>
+    </div>
+</div>  
+
+
+    <section class="py-20 px-8 max-w-4xl mx-auto">
+        <h1 class="text-5xl uppercase font-bold mb-12 border-b border-amber-500 pb-4">Our Services</h1>
+        
+        <div class="space-y-8">
+            <div class="flex justify-between items-end border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-2xl font-bold uppercase">The Signature Fade</h3>
+                    <p class="text-zinc-400 text-sm">Precision taper or skin fade with straight razor finish.</p>
+                </div>
+                <span class="text-amber-500 text-2xl font-bold font-mono">$35</span>
+            </div>
+
+            <div class="flex justify-between items-end border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-2xl font-bold uppercase">Beard Sculpting</h3>
+                    <p class="text-zinc-400 text-sm">Line up, trim, and conditioning oil treatment.</p>
+                </div>
+                <span class="text-amber-500 text-2xl font-bold font-mono">$20</span>
+            </div>
+
+            <div class="flex justify-between items-end border-b border-zinc-800 pb-4">
+                <div>
+                    <h3 class="text-2xl font-bold uppercase">The Royal Treatment</h3>
+                    <p class="text-zinc-400 text-sm">Full haircut, beard trim, and hot towel facial.</p>
+                </div>
+                <span class="text-amber-500 text-2xl font-bold font-mono">$55</span>
+            </div>
+        </div>
+    </section>
+
+<script src="main.js"></script>    
+</body>
+</html>

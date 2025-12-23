@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MunaOTR Trimz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+          <nav class="flex items-center justify-between px-6 md:px-8 py-6 sticky top-0 bg-zinc-950/95 backdrop-blur-sm z-50 border-b border-zinc-900">
+    <div class="text-xl md:text-2xl font-bold uppercase tracking-tighter">
+        <a href="index.html">MunaOTR<span class="text-amber-500">Trimz</span></a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+        <a href="index.html" class="hover:text-amber-500 transition">Home</a>
+        <a href="services.html" class="hover:text-amber-500 transition">Services</a>
+        <a href="portfolio.html" class="hover:text-amber-500 transition">Portfolio</a>
+        <a href="about.html" class="hover:text-amber-500 transition">About</a>
+        <a href="contact.html" class="hover:text-amber-500 transition">Contact</a>
+    </div>
+
+    <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden md:block bg-amber-500 text-black px-6 py-2 font-bold uppercase text-xs hover:bg-amber-400">Book Now</a>
+        
+        <button id="open-menu" class="md:hidden text-white p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+</nav>
+
+<div id="menu-backdrop" class="fixed inset-0 bg-black/40 backdrop-blur-md z-[60] hidden transition-all duration-300"></div>
+
+<div id="side-menu" class="fixed top-0 right-0 h-full w-[70%] bg-zinc-950 z-[70] translate-x-full transition-transform duration-300 ease-in-out border-l border-zinc-800 flex flex-col p-8">
+    <button id="close-menu" class="self-end text-zinc-400 mb-12">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </button>
+    
+    <div class="flex flex-col space-y-8 text-2xl uppercase font-bold tracking-widest">
+        <a href="index.html" class="hover:text-amber-500">Home</a>
+        <a href="service.html" class="hover:text-amber-500">Services</a>
+        <a href="portfolio.html" class="hover:text-amber-500">Portfolio</a>
+        <a href="about.html" class="hover:text-amber-500">About</a>
+        <a href="contact.html" class="hover:text-amber-500">Contact</a>
+        <a href="contact.html" class="bg-amber-500 text-black px-6 py-4 text-center text-lg mt-4">Book Now</a>
+    </div>
+</div>
+
+    <main class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 w-full h-full border-2 border-amber-500 z-0"></div>
+                <img src="https://images.unsplash.com/photo-1512690196236-407425637213?auto=format&fit=crop&q=80" 
+                     alt="The Barber at work" class="relative z-10 w-full object-cover shadow-2xl">
+            </div>
+
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold uppercase mb-6 tracking-tight">The Craft <br> Behind The <span class="text-amber-500">Trim</span></h1>
+                <p class="text-zinc-400 text-lg mb-6 leading-relaxed">
+                    At MunaOTR Trimz, we believe that a haircut is more than just a routine—it's an identity. Founded on the principles of precision and traditional artistry, we’ve spent years mastering the craft of the modern fade and the classic taper.
+                </p>
+                <p class="text-zinc-400 text-lg mb-8 leading-relaxed">
+                    Our shop isn't just a place for a cut; it's a community hub where style meets comfort. Every client who sits in our chair receives a personalized experience tailored to their unique features and lifestyle.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-8 py-8 border-t border-zinc-800">
+                    <div>
+                        <h3 class="text-3xl font-bold text-amber-500">10+</h3>
+                        <p class="uppercase text-xs tracking-widest text-zinc-500">Years Experience</p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-amber-500">5k+</h3>
+                        <p class="uppercase text-xs tracking-widest text-zinc-500">Fresh Fades</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-zinc-900 py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
+            <div>
+                <h3 class="text-amber-500 uppercase font-bold tracking-widest mb-4">Location</h3>
+                <p class="text-zinc-300">123 Barber Street, <br> Suite 404, City, State</p>
+            </div>
+            <div>
+                <h3 class="text-amber-500 uppercase font-bold tracking-widest mb-4">Working Hours</h3>
+                <p class="text-zinc-300">Mon — Fri: 9am - 8pm<br>Sat: 10am - 6pm</p>
+            </div>
+            <div>
+                <h3 class="text-amber-500 uppercase font-bold tracking-widest mb-4">Contact</h3>
+                <p class="text-zinc-300">Email: hello@munaotr.com<br>Phone: (555) 000-TRIM</p>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-16 h-80 bg-zinc-800 border border-zinc-700 flex items-center justify-center grayscale">
+            <span class="text-zinc-500 uppercase tracking-widest font-bold">[ Google Maps Integration Here ]</span>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-zinc-600 text-xs tracking-widest uppercase">
+        <p>&copy; 2025 MunaOTR Trimz. All Rights Reserved.</p>
+    </footer>
+     <script src="main.js"></script>
+</body>
+</html>
